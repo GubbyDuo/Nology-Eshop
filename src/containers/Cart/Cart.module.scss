@@ -1,0 +1,17 @@
+.cartTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardSubtitle {
+    width: 70%;
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.subtitleStyle {
+    display: flex;
+    justify-content: center;
+}

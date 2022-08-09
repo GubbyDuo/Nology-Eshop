@@ -1,0 +1,41 @@
+.itemGrid {
+    width: 80%;
+    display: grid;
+    height: 140px;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 100%;
+    border: 2px solid black;
+}
+
+.itemGrid img {
+    max-width: 99%;
+    max-height: 99%;
+}
+.image {
+    border-radius: 5%;
+}
+
+.imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.textAreaParent {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.textArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
