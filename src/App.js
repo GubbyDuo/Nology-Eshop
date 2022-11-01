@@ -16,20 +16,25 @@ function App() {
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
+        console.log("Inside UseEffect");
         const wrapper = async () => {
-            const products = await getProducts();
-            setProducts(products);
+            const myProducts = await getProducts();
+            setProducts(myProducts);
         };
         wrapper();
     }, []);
 
+    console.log("First Declaration");
     return (
         <CartContext.Provider value={[cart, setCart]}>
             <PageWrapper>
                 <BrowserRouter>
                     <Nav />
                     <Routes>
-                        <Route path="/" element={<Home />}></Route>
+                        <Route
+                            path="/"
+                            element={<Home product={products} />}
+                        ></Route>
                         <Route
                             path="/products"
                             element={<Products products={products} />}
