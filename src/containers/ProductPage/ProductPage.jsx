@@ -67,26 +67,25 @@ const ProductPage = () => {
     return (
         <>
             <div className={styles.productPage}>
-                <div className={styles.grid}>
-                    <div>
-                        <img
-                            className={styles.image}
-                            src={product && product.image}
-                            alt=""
-                        />
-                    </div>
-                    <div className={styles.textField}>
-                        <h1>
-                            {product && product.name} (
-                            {product && product.pitch})
-                        </h1>
-                        <div className={styles.productInfo}>
-                            <p>Price: ${product && product.price}</p>
-                            <p>In stock: {product && product.stock}</p>
-                            <button onClick={addToCart}>Add to Cart</button>
-                        </div>
+                {/* <div className={styles.grid}> */}
+                <div>
+                    <img
+                        className={styles.image}
+                        src={product && product.image}
+                        alt=""
+                    />
+                </div>
+                <div className={styles.textField}>
+                    <h1>
+                        {product && product.name} ({product && product.pitch})
+                    </h1>
+                    <div className={styles.productInfo}>
+                        <p>Price: ${product && product.price}</p>
+                        <p>In stock: {product && product.stock}</p>
+                        <button onClick={addToCart}>Add to Cart</button>
                     </div>
                 </div>
+                {/* </div> */}
             </div>
         </>
     );

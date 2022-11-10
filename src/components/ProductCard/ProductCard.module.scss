@@ -1,6 +1,6 @@
 .image {
     width: 80%;
-    margin-top: 5px;
+    margin-top: 15px;
     border-radius: 5%;
 }
 
@@ -10,11 +10,14 @@
     align-items: center;
     width: 85%;
     // border: 2px solid black;
-    box-shadow: 0 4px 15px #00000026;
+    box-shadow: 10px 10px 25px #00000026;
+    background-color: rgba($color: #202020, $alpha: 0.9);
+    border-radius: 10% / 5%;
 }
 
 .textMargin {
     margin: 2px;
+    color: lightgray;
 }
 
 .bottomText {

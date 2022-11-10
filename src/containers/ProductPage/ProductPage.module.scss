@@ -1,8 +1,8 @@
 .productPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin-top: 20px;
+    width: 50%;
 }
 
 .grid {
@@ -16,11 +16,17 @@
 }
 
 .productInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 32px;
+    color: white;
 }
 
 .textField {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba($color: #202020, $alpha: 0.9);
+    border-radius: 20px / 20px;
 }

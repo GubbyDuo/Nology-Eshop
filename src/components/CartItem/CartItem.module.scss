@@ -4,7 +4,7 @@
     height: 140px;
     grid-template-columns: 10% 90%;
     grid-template-rows: 100%;
-    border: 2px solid black;
+    border: 2px solid lightgray;
 }
 
 .itemGrid img {
@@ -22,6 +22,7 @@
 }
 
 .cartPage {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,6 +36,7 @@
 }
 
 .textArea {
+    color: lightgray;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -6,7 +6,7 @@ const Products = (props) => {
     const { products } = props;
     return (
         <div className={styles.productPage}>
-            <h1>Products</h1>
+            <h1 className={styles.productsHeader}>Products</h1>
             <div className={styles.grid}>
                 {products.map((product) => {
                     console.log(product);

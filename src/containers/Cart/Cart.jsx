@@ -16,10 +16,11 @@ const Cart = () => {
                     <div className={styles.subtitleStyle}>Quantity</div>
                     <div className={styles.subtitleStyle}>Total</div>
                 </div>
+
+                {cart.map((item) => {
+                    return <CartItem data={item} />;
+                })}
             </div>
-            {cart.map((item) => {
-                return <CartItem data={item} />;
-            })}
         </div>
     );
 };

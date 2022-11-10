@@ -26,28 +26,30 @@ function App() {
 
     console.log("First Declaration");
     return (
-        <CartContext.Provider value={[cart, setCart]}>
-            <PageWrapper>
-                <BrowserRouter>
-                    <Nav />
-                    <Routes>
-                        <Route
-                            path="/"
-                            element={<Home product={products} />}
-                        ></Route>
-                        <Route
-                            path="/products"
-                            element={<Products products={products} />}
-                        ></Route>
-                        <Route
-                            path="/products/:productId"
-                            element={<ProductPage />}
-                        ></Route>
-                        <Route path="/cart" element={<Cart />}></Route>
-                    </Routes>
-                </BrowserRouter>
-            </PageWrapper>
-        </CartContext.Provider>
+        <div className="App">
+            <CartContext.Provider value={[cart, setCart]}>
+                <PageWrapper>
+                    <BrowserRouter>
+                        <Nav />
+                        <Routes>
+                            <Route
+                                path="/"
+                                element={<Home product={products} />}
+                            ></Route>
+                            <Route
+                                path="/products"
+                                element={<Products products={products} />}
+                            ></Route>
+                            <Route
+                                path="/products/:productId"
+                                element={<ProductPage />}
+                            ></Route>
+                            <Route path="/cart" element={<Cart />}></Route>
+                        </Routes>
+                    </BrowserRouter>
+                </PageWrapper>
+            </CartContext.Provider>
+        </div>
     );
 }
 

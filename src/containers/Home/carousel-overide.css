@@ -1,0 +1,7 @@
+.slick-prev::before {
+    color: white !important;
+}
+
+.slick-next::before {
+    color: white !important;
+}
